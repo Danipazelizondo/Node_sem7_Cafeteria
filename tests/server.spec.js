@@ -3,7 +3,7 @@ const server = require("../index");
 
 describe("Operaciones CRUD de cafes", () => {
 
-    it("GET /cafes → responde 200 y retorna un array con >0 objetos", async () => {
+    it("GET /cafes → responde 200_ y retorna un array con >0 objetos", async () => {
         const res = await request(server).get("/cafes");
 
         expect(res.statusCode).toBe(200);
